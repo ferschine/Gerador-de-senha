@@ -62,5 +62,6 @@ function geraSenha() {
 }
 
 function ClassificaSenha(){
+    forcaSenha.classList.remove('fraca','media','forte');
     forcaSenha.classList.add('forte')
 }
