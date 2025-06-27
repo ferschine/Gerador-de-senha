@@ -1,7 +1,6 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto');
-let tamanhoSenha = 12;
+let tamanhoSenha = 5;
 numeroSenha.textContent = tamanhoSenha;
-
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
 const numeros = '0123456789';
@@ -32,9 +31,13 @@ function aumentaTamanho() {
     geraSenha();
 }
 
+
+
+
 for (i = 0; i < checkbox.length; i++) {
     checkbox[i].onclick = geraSenha;
 }
+
 
 geraSenha();
 
@@ -75,5 +78,5 @@ function ClassificaSenha(){
     } else if (tamanhoSenha <= 5){
 
         forcaSenha.classList.add('forte');
-    }
+}
 }
