@@ -60,3 +60,7 @@ function geraSenha() {
     }
     campoSenha.value = senha;
 }
+
+function ClassificaSenha(){
+    forcaSenha.classList.add('forte')
+}
